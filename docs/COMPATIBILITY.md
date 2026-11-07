@@ -4,6 +4,10 @@ Compatibility is determined first by the exact game-file hashes, not by storefro
 
 ## Game build
 
+> Tested game version: `v1.017.189.2.1088394` (as displayed in the main menu).
+>
+> This version has been confirmed working with the patch on one installation. Compatibility is currently restricted by the supported executable and engine hashes; matching the displayed game version alone does not guarantee compatibility.
+
 | Configuration | Status | Evidence |
 |---|---|---|
 | `WatchDogs2.exe` SHA-256 `DBC465…97F3` plus `Disrupt_64.dll` SHA-256 `1BC77B…D865` | **Tested working** | Physical in-game test and automated binary validation |

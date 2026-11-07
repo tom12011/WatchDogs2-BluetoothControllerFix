@@ -34,6 +34,10 @@ See [Technical details](docs/TECHNICAL.md) for the complete control-flow evidenc
 
 ## Supported game build
 
+> Tested game version: `v1.017.189.2.1088394` (as displayed in the main menu).
+>
+> This version has been confirmed working with the patch on one installation. Compatibility is currently restricted by the supported executable and engine hashes; matching the displayed game version alone does not guarantee compatibility.
+
 The authoritative identifiers are:
 
 | File | SHA-256 |
