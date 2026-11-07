@@ -1,0 +1,122 @@
+name: Compatibility test result
+description: Submit a structured result for another controller, OS, storefront, or game build.
+title: "[Compatibility]: "
+labels:
+  - compatibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for expanding the compatibility evidence. A single report is evidence for that configuration, not a universal storefront or controller claim. Do not upload proprietary game files.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Test conditions
+      options:
+        - label: I tested offline with multiplayer and Easy Anti-Cheat disabled.
+          required: true
+        - label: I did not use this project to bypass or evade anti-cheat.
+          required: true
+
+  - type: dropdown
+    id: overall
+    attributes:
+      label: Overall result
+      options:
+        - Working
+        - Partially working
+        - Not working
+        - Game failed to launch
+    validations:
+      required: true
+
+  - type: input
+    id: exe_hash
+    attributes:
+      label: WatchDogs2.exe SHA-256
+      placeholder: 64 hexadecimal characters
+    validations:
+      required: true
+
+  - type: input
+    id: engine_hash
+    attributes:
+      label: Disrupt_64.dll SHA-256
+      placeholder: 64 hexadecimal characters
+    validations:
+      required: true
+
+  - type: input
+    id: controller
+    attributes:
+      label: Exact controller model
+    validations:
+      required: true
+
+  - type: input
+    id: firmware
+    attributes:
+      label: Controller firmware version
+      description: Optional if unknown.
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection tested
+      multiple: true
+      options:
+        - Bluetooth
+        - USB-C
+        - Xbox Wireless Adapter
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build
+    validations:
+      required: true
+
+  - type: input
+    id: distribution
+    attributes:
+      label: Storefront or distribution label
+      placeholder: Ubisoft Connect, Steam, Epic Games, or unknown
+
+  - type: input
+    id: launch_flow
+    attributes:
+      label: Launch flow
+      placeholder: Direct, Playnite, WeMod, or other
+
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Working features
+      options:
+        - label: Main-menu navigation
+        - label: Gameplay buttons and D-pad
+        - label: Analog sticks
+        - label: Triggers
+        - label: Vibration
+        - label: Bluetooth to USB switching
+        - label: USB to Bluetooth switching
+
+  - type: textarea
+    id: software
+    attributes:
+      label: Other controller, remapping, overlay, or injection software
+      description: Write "none" if not applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Result details
+      description: Explain failures, partial behavior, reconnect requirements, or exact error messages.
+    validations:
+      required: true

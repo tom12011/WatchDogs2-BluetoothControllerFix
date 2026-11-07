@@ -1,0 +1,126 @@
+name: Bug report
+description: Report a failure on the documented supported game build.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project is for offline single-player use only. Do not attach proprietary game binaries, private crash dumps, or diagnostic files containing personal information.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I tested offline with multiplayer and Easy Anti-Cheat disabled.
+          required: true
+        - label: I am not requesting anti-cheat bypassing or evasion.
+          required: true
+        - label: I backed up or identified any pre-existing local xinput9_1_0.dll.
+          required: true
+
+  - type: input
+    id: exe_hash
+    attributes:
+      label: WatchDogs2.exe SHA-256
+      description: Run Get-FileHash .\WatchDogs2.exe -Algorithm SHA256 in the executable directory.
+      placeholder: 64 hexadecimal characters
+    validations:
+      required: true
+
+  - type: input
+    id: engine_hash
+    attributes:
+      label: Disrupt_64.dll SHA-256
+      description: Run Get-FileHash .\Disrupt_64.dll -Algorithm SHA256.
+      placeholder: 64 hexadecimal characters
+    validations:
+      required: true
+
+  - type: input
+    id: mod_hash
+    attributes:
+      label: Installed xinput9_1_0.dll SHA-256
+      placeholder: 64 hexadecimal characters
+    validations:
+      required: true
+
+  - type: input
+    id: controller
+    attributes:
+      label: Controller model
+      placeholder: Xbox Elite Wireless Controller Series 2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: transport
+    attributes:
+      label: Connection
+      options:
+        - Bluetooth
+        - USB-C
+        - Xbox Wireless Adapter
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build
+      placeholder: Windows 10 x64, build 19045
+    validations:
+      required: true
+
+  - type: input
+    id: distribution
+    attributes:
+      label: Storefront or distribution
+      description: State what the launcher reports; compatibility is still determined by hashes.
+      placeholder: Ubisoft Connect, Steam, Epic Games, or unknown
+
+  - type: input
+    id: launch_flow
+    attributes:
+      label: Launch flow
+      placeholder: Direct, Playnite, WeMod, or other
+
+  - type: textarea
+    id: other_input_software
+    attributes:
+      label: Other controller or injection software
+      description: Include Steam Input, reWASD, DS4Windows, x360ce, ViGEm, HidHide, overlays, and other local DLL proxies. Write "none" if not applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal numbered sequence.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the exact Windows error text or code if one appeared.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional non-sensitive details
+      description: Do not upload game DLLs or files containing personal information.

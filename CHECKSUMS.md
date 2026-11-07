@@ -1,0 +1,17 @@
+# Checksums
+
+## v0.9.0-beta release asset
+
+| Artifact | SHA-256 |
+|---|---|
+| `WatchDogs2-BluetoothControllerFix-v0.9.0-beta.zip` | `805DC6591B65483551CF4B4BFC13B48763F021054876AD560DDF42CC1CE8AF7D` |
+| Packaged `xinput9_1_0.dll` | `F4112AFAB93E3A9200E2F442286A80EF76EA5BB0552CE9F0A68F2E004BED38CC` |
+
+## Supported game files
+
+These files are not distributed by the project.
+
+| File | SHA-256 |
+|---|---|
+| `WatchDogs2.exe` | `DBC465877DD69F9B2C97B6004D713FC2C2166298514AF516AEE8BF2FBD0A97F3` |
+| `Disrupt_64.dll` | `1BC77B469A3591BEC36B3AF41D513F45BA2887BC338276B1388B5DD932CCD865` |

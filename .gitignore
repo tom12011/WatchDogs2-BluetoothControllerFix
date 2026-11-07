@@ -1,0 +1,14 @@
+# Local release assembly and generated compiler outputs
+/dist/
+/*.obj
+/*.lib
+/*.pdb
+/xinput9_1_0.dll
+
+# Editor and operating-system files
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+.DS_Store
