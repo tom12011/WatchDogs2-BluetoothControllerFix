@@ -1,6 +1,6 @@
 # Notice
 
-This repository is an independent compatibility project for Watch Dogs 2. It is not affiliated with, authorised by, or endorsed by Ubisoft, Microsoft, Xbox, Playnite, WeMod, Valve, Epic Games, or their affiliates.
+This repository is an independent compatibility project for Watch Dogs 2. It is not affiliated with, authorised by, or endorsed by Ubisoft, Microsoft, Xbox, Valve, Epic Games, or their affiliates.
 
 No Ubisoft executable, engine DLL, game asset, diagnostic trace, or proprietary game code is included. Product names and trademarks are used descriptively and remain the property of their respective owners.
 

@@ -13,8 +13,6 @@ Compatibility is determined first by the exact game-file hashes, not by storefro
 | Ubisoft Connect-labelled installation | Untested as a storefront category | Compatibility must be established by hashes |
 | Epic Games-labelled installation | Untested as a storefront category | Compatibility must be established by hashes |
 
-The tested environment used an existing Playnite → WeMod launch flow and included a modified Ubisoft/Uplay loader. That observation does not establish compatibility with every copy from any storefront.
-
 ## Controllers and transport
 
 | Controller / connection | Status | Notes |
@@ -44,7 +42,6 @@ The tested environment used an existing Playnite → WeMod launch flow and inclu
 | Configuration | Status |
 |---|---|
 | No virtual-controller or remapping layer | **Tested working** |
-| Playnite → WeMod launch flow | **Tested working** |
 | Steam Input enabled | Untested |
 | DS4Windows, reWASD, x360ce, ViGEm, HidHide, or similar | Untested; possible conflict |
 | Another local `xinput9_1_0.dll` proxy | Not directly compatible without deliberate proxy chaining |
