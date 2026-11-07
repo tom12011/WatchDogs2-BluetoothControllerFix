@@ -19,7 +19,6 @@ Tested successfully with:
 - USB-C input.
 - Bluetooth-to-USB-C and USB-C-to-Bluetooth switching.
 - Windows 10 x64, build 19045.
-- An existing Playnite → WeMod launch flow.
 
 Other controllers, operating systems, storefront variants, game builds, and launch configurations remain untested unless recorded in the [compatibility matrix](docs/COMPATIBILITY.md). No universal Steam, Ubisoft Connect, or Epic Games compatibility is claimed.
 
