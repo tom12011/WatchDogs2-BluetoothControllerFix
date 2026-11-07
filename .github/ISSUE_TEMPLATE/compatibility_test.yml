@@ -90,7 +90,7 @@ body:
     id: launch_flow
     attributes:
       label: Launch flow
-      placeholder: Direct, Playnite, WeMod, or other
+      placeholder: Direct, storefront launcher, or other
 
   - type: checkboxes
     id: features
